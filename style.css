@@ -176,12 +176,13 @@
   .lift {
     display: block;
     height: 100%;
-    width: 100px;
+    width: 70px;
+    margin-left: 5%; 
     position: absolute;
-    left: 15%;
+    left: 10%;
     bottom: 1%;
     background-color: var(--color-divider);
-    overflow: hidden;
+    /* overflow: hidden; */
     border-radius: 8px;
   }
   
@@ -190,7 +191,7 @@
     width: 50%;
     height: 100%;
     position: relative;
-    z-index: 2;
+    z-index: 5;
   }
   
   .lift__door-left {
@@ -240,6 +241,22 @@
     .control-btn {
       font-size: var(--fontsize-regular-medium);
     }
+
+
   }
+
+
+  @media screen and (max-width: 768px) {
+    .lift {
+        width: 30px;
+        left: 5%;
+        bottom: 2%;
+    }
+
+    .lift__door {
+        width: 50%;
+    }
+}
+
   /* /////////////////////////////////////////////////////////// */
   
